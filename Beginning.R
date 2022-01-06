@@ -1,9 +1,12 @@
+## Load library
 library(foreign)
+## Import dataset
 sav <- read.spss("Taungya questionnaire.sav")
+## Look summary and initial plots
 summary(sav)
 plot(sav$Vill_name, sav$Age)
 plot(sav$Vill_name, sav$Fam_mem)
-### Descriptive stat
+### Descriptive statistics
 ## Preparation
 sav$Vill_name == "Daggea"
 which(sav$Vill_name == "Daggea")
